@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+     agent any
+
+    tools {
+        maven 'maven396' // Replace with the name of your Maven installation in Jenkins
+    }
     stages {
         stage('Build') {
             steps {
